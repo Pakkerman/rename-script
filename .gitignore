@@ -1,0 +1,6 @@
+log.txt
+.env
+node_modules
+test.
+gitignoreGen.sh
+.DS_Store

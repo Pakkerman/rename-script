@@ -35,7 +35,7 @@ for FILE in $FILES
     FILENAME=$(printf "%04d\n" $COUNTER)
     EXTENSION="${FILE##*.}"
     echo "$FILE >>> $FILEPREFIX$FILENAME.$EXTENSION"
-    mv $path$FILE $path$FILEPREFIX$FILENAME.$EXTENSION
+    mv -f $path$FILE $path$FILEPREFIX$FILENAME.$EXTENSION
 
     ((COUNTER++))
 done
